@@ -1,0 +1,244 @@
+@media screen and (max-width: 767px) {
+    #s5-container>div:last-child { display: none; }
+
+    .s5-two-cards { width: 100%; }
+}
+
+@media screen and (min-width: 768px) {
+    .s5-two-cards { width: 46%; }
+}
+
+#section-5 .section-header {
+    background-image: -webkit-linear-gradient(#333 50%, rgba(241, 232, 144, .1) 100%);
+    background-image: -moz-linear-gradient(#333 50%, rgba(241, 232, 144, .1) 100%);
+    background-image: -o-linear-gradient(#333 50%, rgba(241, 232, 144, .1) 100%);
+    background-image: linear-gradient(#333 50%, rgba(241, 232, 144, .1) 100%);
+}
+
+#s5-body {
+    background-color: rgb(241, 232, 144);
+    margin: auto;
+    padding: 1px 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#s5-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    height: 400px;
+    width: 80%;
+}
+
+.s5-two-cards {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.s5-two-cards h2 { margin: 120px 0 0 0; }
+
+.s5-two-cards h3 { margin: 0; }
+
+.s5-upper-card {
+    background-color: rgb(70, 140, 185);
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: absolute;
+    left: 30%;
+    height: 100%;
+    width: 40%;
+    z-index: 3;
+}
+
+.s5-upper-card:hover { cursor: pointer; }
+
+.s5-lower-card {
+    background-color: rgb(125, 210, 235);
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: absolute;
+    left: 30%;
+    height: 100%;
+    width: 40%;
+    z-index: 2;
+}
+
+.s5-lower-card:hover { cursor: pointer; }
+
+@keyframes card1-to-top {
+    from {
+        left: 30%;
+        transform: scale(1);
+    }
+    10% {
+        left: 30%;
+        transform: scale(1);
+    }
+    45% {
+        left: 60%;
+        transform: scale(1);
+    }
+    55% {
+        left: 60%;
+        transform: scale(1.1);
+    }
+    90% {
+        left: 30%;
+        transform: scale(1.1);
+    }
+    to {
+        left: 30%;
+        transform: scale(1);
+    }
+}
+
+@keyframes card1-to-down {
+    from {
+        left: 30%;
+        transform: scale(1);
+    }
+    10% {
+        left: 30%;
+        transform: scale(1.1);
+    }
+    45% {
+        left: 0;
+        transform: scale(1.1);
+    }
+    55% {
+        left: 0;
+        transform: scale(1);
+    }
+    90% {
+        left: 30%;
+        transform: scale(1);
+    }
+    to {
+        left: 30%;
+        transform: scale(1);
+    }
+}
+
+@keyframes card2-to-top {
+    from {
+        left: 30%;
+        transform: scale(1);
+    }
+    10% {
+        left: 30%;
+        transform: scale(1);
+    }
+    45% {
+        left: 60%;
+        transform: scale(1);
+    }
+    55% {
+        left: 60%;
+        transform: scale(1.1);
+    }
+    90% {
+        left: 30%;
+        transform: scale(1.1);
+    }
+    to {
+        left: 30%;
+        transform: scale(1);
+    }
+}
+
+@keyframes card2-to-down {
+    from {
+        left: 30%;
+        transform: scale(1);
+    }
+    10% {
+        left: 30%;
+        transform: scale(1.1);
+    }
+    45% {
+        left: 0;
+        transform: scale(1.1);
+    }
+    55% {
+        left: 0;
+        transform: scale(1);
+    }
+    90% {
+        left: 30%;
+        transform: scale(1);
+    }
+    to {
+        left: 30%;
+        transform: scale(1);
+    }
+}
+
+@keyframes card3 {
+    from { left: 30% }
+    50% { left: 0 }
+    to { left: 30% }
+}
+
+@keyframes card4 {
+    from { left: 30% }
+    50%  {left: 60% }
+    to { left: 30% }
+}
+
+@keyframes zIndexToTop {
+    from { z-index: 2 }
+    48% { z-index: 2 }
+    52% { z-index: 3 }
+    to { z-index: 3 }
+}
+
+@keyframes zIndexToDown {
+    from { z-index: 3 }
+    48% { z-index: 3 }
+    52% { z-index: 2 }
+    to { z-index: 2}
+}
+
+.s5-card-1-move-top {
+    animation-name: card1-to-top, zIndexToTop;
+    animation-duration: 2s;
+}
+
+.s5-card-1-move-down {
+    animation-name: card1-to-down, zIndexToDown;
+    animation-duration: 2s;
+}
+
+.s5-card-2-move-top {
+    animation-name: card2-to-top, zIndexToTop;
+    animation-duration: 2s;
+}
+
+.s5-card-2-move-down {
+    animation-name: card2-to-down, zIndexToDown;
+    animation-duration: 2s;
+}
+
+.s5-card-3-move-top {
+    animation-name: card3, zIndexToTop;
+    animation-duration: 2s;
+}
+
+.s5-card-3-move-down {
+    animation-name: card3, zIndexToDown;
+    animation-duration: 2s;
+}
+
+.s5-card-4-move-top {
+    animation-name: card4, zIndexToTop;
+    animation-duration: 2s;
+}
+
+.s5-card-4-move-down {
+    animation-name: card4, zIndexToDown;
+    animation-duration: 2s;
+}

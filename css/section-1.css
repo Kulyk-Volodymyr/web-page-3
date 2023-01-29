@@ -1,0 +1,122 @@
+@media screen and (max-width: 767px) {
+    #s1-container>div:last-child { display: none; }
+    .s1-two-cards { width: 100%; }
+}
+
+@media screen and (min-width: 768px) {
+    .s1-two-cards { width: 46%; }
+}
+
+#section-1 .section-header {
+    background-image: -webkit-linear-gradient(#333 50%, rgba(245, 220, 185, .1) 100%);
+    background-image: -moz-linear-gradient(#333 50%, rgba(245, 220, 185, .1) 100%);
+    background-image: -o-linear-gradient(#333 50%, rgba(245, 220, 185, .1) 100%);
+    background-image: linear-gradient(#333 50%, rgba(245, 220, 185, .1) 100%);
+}
+
+#s1-body {
+    background-color: rgb(245, 220, 185);
+    margin: auto;
+    padding: 1px 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#s1-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    height: 400px;
+    width: 80%;
+}
+
+.s1-two-cards {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.s1-card-wrapper {
+    height: 100%;
+    width: 40%;
+}
+
+.s1-card-main {
+    background: none;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.s1-card-container {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.s1-card-container h1{ margin: 100px 0 0 0; }
+
+.s1-card-container h3{ margin: 0; }
+
+.s1-card-perspective { transform: perspective(1000px); }
+
+.s1-card-front {
+    backface-visibility: hidden;
+    background: rgb(255, 250, 215);
+    border: 2px solid #333;
+    border-radius: 10px;
+    color: #333;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.s1-card-front:hover {
+    background: rgb(250, 245, 200);
+    border: 2px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+.s1-card-back {
+    backface-visibility: hidden;
+    background: rgb(50, 45, 90);
+    border: 2px solid rgb(50, 45, 90);
+    border-radius: 10px;
+    color: #ddd;
+    position: absolute;
+    text-align: center;
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+}
+
+.s1-card-back:hover {
+    background: rgb(40, 40, 80);
+    border: 2px solid rgb(40, 40, 80);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Flipping start */
+.flipCard1 { transform: rotateY(180deg); }
+
+.flipCard2 {
+    transform: rotateY(180deg) translate(-100%);
+    transform-origin: left;
+}
+
+.flipCard3 { transform: rotateY(180deg); }
+
+.flipCard4 {
+    transform: rotateY(180deg) translate(-100%) perspective(1000px);
+    transform-origin: left;
+}
+/* Flipping end */

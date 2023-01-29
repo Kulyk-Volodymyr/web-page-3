@@ -1,0 +1,104 @@
+@media screen and (max-width: 767px) {
+    .s-3-1 {
+        display: none;
+    }
+    
+    .s-3-2 {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .s-3-1 {
+        height: 100%;
+        width: 50%;
+    }
+    
+    .s-3-2 {
+        height: 100%;
+        width: 50%;
+    }
+}
+
+#section-3 .section-header {
+    background-image: -webkit-linear-gradient(#333 50%, rgba(245, 240, 195, .1) 100%);
+    background-image: -moz-linear-gradient(#333 50%, rgba(245, 240, 195, .1) 100%);
+    background-image: -o-linear-gradient(#333 50%, rgba(245, 240, 195, .1) 100%);
+    background-image: linear-gradient(#333 50%, rgba(245, 240, 195, .1) 100%);
+}
+
+#s3-body {
+    background-color: rgb(245, 240, 195);
+    padding: 1px 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#s3-container {
+    display: flex;
+    margin: 20px auto;
+    height: 400px;
+    width: 80%;
+}
+
+.s-3-1-1 {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+}
+
+.s-3-1-2 {
+    background-color: #fff;
+    border: 5px solid #090;
+    border-radius: 10px;
+    color: #090;
+    position: relative;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    transition: all ease-out;
+    transition-duration: 1s;
+    height: 90px;
+    width: 90px;
+}
+
+.s-3-2-1 {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+}
+
+.s-3-2-2 {
+    background-color: #fff;
+    border: 5px solid #c00;
+    border-radius: 10px;
+    color: #c00;
+    position: relative;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    transition: all ease-out;
+    transition-duration: 0.5s;
+    height: 90px;
+    width: 90px;
+}
+
+.s-3-p-in-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+    height: 80%;
+}
+
+.s-3-p-in-div p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.s-3-p-in-div p:last-child { font-size: xx-large; }

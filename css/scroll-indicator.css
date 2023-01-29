@@ -1,0 +1,63 @@
+#scroll-indicator {
+    display: flex;
+    position: fixed;
+    left: 10px;
+    top: 10vh;
+    height: 80vh;
+    z-index: 1000;
+}
+
+#indicator-border {
+    background-color: rgb(200, 250, 200);
+    outline: 3px solid darkgreen;
+    height: 100%;
+    width: 12px;
+}
+
+#indicator-body {
+    background-color: rgb(90, 190, 90);
+    height: 0%;
+}
+
+#section-pointers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    top: -20px;
+}
+
+.section-pointer {
+    background-color: rgb(200, 250, 200);
+    border: 3px solid darkgreen;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 500ms;
+    position: absolute;
+    left: -15px;
+    top: 0%;
+    height: 34px;
+    width: 34px;
+}
+
+.section-pointer:hover {
+    background-color: rgb(90, 190, 90);
+    width: 134px;
+}
+
+.section-name {
+    font-size: x-large;
+    font-weight: bold;
+    margin-right: 11px;
+    white-space: pre;
+}
+
+.section-name a {
+    color: #000;
+    text-decoration: none;
+}

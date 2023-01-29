@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/section-1.css">
+  <link rel="stylesheet" href="./css/section-2.css">
+  <link rel="stylesheet" href="./css/section-3.css">
+  <link rel="stylesheet" href="./css/section-4.css">
+  <link rel="stylesheet" href="./css/section-5.css">
+  <link rel="stylesheet" href="./css/section-6.css">
+  <link rel="stylesheet" href="./css/scroll-indicator.css">
+  <title>Lorem Ipsum</title>
+</head>
+
+<body>
+
+  <main>
+
+    <section id="section-1">
+      <div class="section-header">
+        <h1>Section 1</h1>
+        <p>There are four cards. After clicking, the card changes sides (front - back). 
+          Card 1 - a simple horizontal flipping, card 2 - flipping width offset, 
+          card 3 - like card 1 with perspective, card 4 - like card 2 with perspective. 
+          Cards 3 and 4 are hidden on the small screen.</p>
+        <button onclick="showHideContent(0)">Hide content</button>
+      </div>
+      <div id="s1-body">
+        <div id="s1-container">
+          <div class="s1-two-cards">
+
+            <div class="s1-card-wrapper">
+              <div class="s1-card-main">
+                <div class="s1-card-container" id="s1-card-1-1">
+                  <div class="s1-card-front">
+                    <h4>Card 1</h4>
+                    <h1>FRONT</h1>
+                    <h3>side</h3>
+                  </div>
+                  <div class="s1-card-back">
+                    <h4>Card 1</h4>
+                    <h1>BACK</h1>
+                    <h3>side</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="s1-card-wrapper">
+              <div class="s1-card-main">
+                <div class="s1-card-container" id="s1-card-2-1">
+                  <div class="s1-card-front">
+                    <h4>Card 2</h4>
+                    <h1>FRONT</h1>
+                    <h3>side</h3>
+                  </div>
+                  <div class="s1-card-back">
+                    <h4>Card 2</h4>
+                    <h1>BACK</h1>
+                    <h3>side</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="s1-two-cards">
+
+            <div class="s1-card-wrapper">
+              <div class="s1-card-main">
+                <div class="s1-card-container s1-card-perspective" id="s1-card-3-1">
+                  <div class="s1-card-front">
+                    <h4>Card 3</h4>
+                    <h1>FRONT</h1>
+                    <h3>side</h3>
+                  </div>
+                  <div class="s1-card-back">
+                    <h4>Card 3</h4>
+                    <h1>BACK</h1>
+                    <h3>side</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="s1-card-wrapper">
+              <div class="s1-card-main">
+                <div class="s1-card-container s1-card-perspective" id="s1-card-4-1">
+                  <div class="s1-card-front">
+                    <h4>Card 4</h4>
+                    <h1>FRONT</h1>
+                    <h3>side</h3>
+                  </div>
+                  <div class="s1-card-back">
+                    <h4>Card 4</h4>
+                    <h1>BACK</h1>
+                    <h3>side</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-2">
+      <div class="section-header">
+        <h1>Section 2</h1>
+        <p>Lorem Ipsum instructions in 4 steps. Additional text 
+          is extracted after clicking the step.</p>
+        <button onclick="showHideContent(1)">Hide content</button>
+      </div>
+
+      <div id="s2-body">
+        <div id="s2-container">
+          <div class="s2-content">
+
+            <div class="s2-step1">
+              <div class="s2-step1-1 s2-card s2-width1" id="s2-step1">
+                <div class="s2-text">
+                  <h4>Step 1</h4>
+                  <h3>Maecenas varius</h3>
+                  <p>Maecenas varius, leo sed dapibus convallis.</p>
+                </div>
+              </div>
+              <div class="s2-lineToAside s2-lineToAside-1" id="s2-lineToAside1"></div>
+              <div class="s2-aside s2-aside-1" id="s2-aside1">
+                <div class="s2-text">
+                  <p>Morbi cursus neque eget leo egestas facilisis. 
+                    Suspendisse id venenatis neque. Etiam vulputate 
+                    ante viverra sem scelerisque, quis nulla vehicula.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="s2-toNext s2-toNext-1">
+              <div class="s2-toNext-line1"></div>
+              <div class="s2-toNext-line2"></div>
+            </div>
+
+            <div class="s2-step2">
+              <div class="s2-step2-1 s2-card s2-width1" id="s2-step2">
+                <div class="s2-text">
+                  <h4>Step 2</h4>
+                  <h3>Ut pharetra</h3>
+                  <p>Ut pharetra lobortis elit sit amet semper.</p>
+                </div>
+              </div>
+              <div class="s2-lineToAside s2-lineToAside-2" id="s2-lineToAside2"></div>
+              <div class="s2-aside s2-aside-2" id="s2-aside2">
+                <div class="s2-text">
+                  <p>Maecenas consequat purus in sem efficitur. Nunc 
+                    mauris enim, maximus ut odio quis, lacinia libero. 
+                    Cras aliquam mattis nunc sit amet sollicitudin.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="s2-toNext s2-toNext-2">
+              <div class="s2-toNext-line3"></div>
+              <div class="s2-toNext-line4"></div>
+            </div>
+
+            <div class="s2-step3">
+              <div class="s2-step3-1 s2-card s2-width1" id="s2-step3">
+                <div class="s2-text">
+                  <h4>Step 3</h4>
+                  <h3>Curabitur</h3>
+                  <p>Curabitur id dolor a maximus sit amet.</p>
+                </div>
+              </div>
+              <div class="s2-lineToAside s2-lineToAside-3" id="s2-lineToAside3"></div>
+              <div class="s2-aside s2-aside-3" id="s2-aside3">
+                <div class="s2-text">
+                  <p>Nullam rhoncus libero tellus, et sagittis justo 
+                    accumsan ac. Pellentesque accumsan sapien metus, 
+                    vel commodo magna imperdiet vel.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="s2-toNext s2-toNext-3">
+              <div class="s2-toNext-line1"></div>
+              <div class="s2-toNext-line2"></div>
+            </div>
+
+            <div class="s2-step4">
+              <div class="s2-step4-1 s2-card s2-width1" id="s2-step4">
+                <div class="s2-text">
+                  <h4>Step 4</h4>
+                  <h3>Integer nec</h3>
+                  <p>Integer nec nunc eu nisl dignissim scelerisque.</p>
+                </div>
+              </div>
+              <div class="s2-lineToAside s2-lineToAside-4" id="s2-lineToAside4"></div>
+              <div class="s2-aside s2-aside-4" id="s2-aside4">
+                <div class="s2-text">
+                  <p>Sed pulvinar cursus est. Nullam et quam felis. 
+                    Maecenas id magna ac erat finibus blandit. 
+                    Fusce a viverra nunc, commodo tempus tortor. </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-3">
+      <div class="section-header">
+        <h1>Section 3</h1>
+        <p>There are two stickers. Each of them has its own invisible area. 
+          When the cursor is in the area, the sticker moves to the cursor or escapes. 
+          The Touch Me sticker is hidden on the small screen.</p>
+        <button onclick="showHideContent(2)">Hide content</button>
+      </div>
+      <div id="s3-body">
+        <div id="s3-container">
+          <div class="s-3-1">
+            <div class="s-3-1-1" id="s3-towards-mouse-area">
+              <div class="s-3-1-2" id="s3-towards-mouse-item">
+                <div class="s-3-p-in-div">
+                  <p>TOUCH</p><p>ME</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="s-3-2">
+            <div class="s-3-2-1" id="s3-backwards-mouse-area">
+              <div class="s-3-2-2" id="s3-backwards-mouse-item">
+                <div class="s-3-p-in-div">
+                  <p>DON'T</p><p>TOUCH</p><p>ME</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-4">
+      <div class="section-header">
+        <h1>Section 4</h1>
+        <p>There is a picture and its enlarged fragment. When you move the cursor over the picture, 
+          the available areas for zooming appear. When pressed, an enlarged selected fragment appears.</p>
+        <button onclick="showHideContent(3)">Hide content</button>
+      </div>
+      <div id="s4-body">
+        <div id="s4-container">
+          <div class="s-4-1">
+            <div class="s-4-img-wrapper">
+              <img src="./images/Bosch_The_Garden.jpg" alt="image" class="s-4-img">
+              <div class="s-4-img-area" style="left: 5%; width: 15%; top: 60%; height: 23%;"></div>
+              <div class="s-4-img-area s-4-img-area-active" style="left: 40%; width: 20%; top: 35%; height: 30%;"></div>
+              <div class="s-4-img-area" style="left: 2%; width: 8%; top: 4%; height: 16%;"></div>
+              <div class="s-4-img-area" style="left: 14%; width: 6%; top: 26%; height: 12%;"></div>
+              <div class="s-4-img-area" style="left: 6%; width: 6%; top: 86%; height: 10%;"></div>
+              <div class="s-4-img-area" style="left: 26%; width: 12%; top: 12%; height: 20%;"></div>
+              <div class="s-4-img-area" style="left: 62%; width: 8%; top: 10%; height: 14%;"></div>
+              <div class="s-4-img-area" style="left: 28%; width: 14%; top: 74%; height: 22%;"></div>
+              <div class="s-4-img-area" style="left: 62%; width: 10%; top: 74%; height: 20%;"></div>
+              <div class="s-4-img-area" style="left: 78%; width: 6%; top: 6%; height: 10%;"></div>
+              <div class="s-4-img-area" style="left: 82%; width: 12%; top: 26%; height: 26%;"></div>
+              <div class="s-4-img-area" style="left: 86%; width: 12%; top: 60%; height: 22%;"></div>
+            </div>
+            <p>The Garden of Earthly Delights</p>
+            <p>Hieronymus Bosch</p>
+          </div>
+          <div class="s-4-2">
+            <img src="./images/Bosch_The_Garden_High_Resolution.jpg" alt="image" class="s-4-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-5">
+      <div class="section-header">
+        <h1>Section 5</h1>
+        <p>There are two pairs of cards. Under each card is another. After clicking, 
+          the cards change places (upper card - lower card). The first pair has an additional 
+          perspective effect. The second pair is hidden on a small screen.</p>
+        <button onclick="showHideContent(4)">Hide content</button>
+      </div>
+      <div id="s5-body">
+        <div id="s5-container">
+
+          <div class="s5-two-cards" id="s5-card-1-and-2">
+            <div class="s5-upper-card" id="s5-card-1">
+              <h2>UPPER</h2>
+              <h3>card</h3>
+            </div>
+            <div class="s5-lower-card" id="s5-card-2">
+              <h2>LOWER</h2>
+              <h3>card</h3>
+            </div>
+          </div>
+
+          <div class="s5-two-cards" id="s5-card-3-and-4">
+            <div class="s5-upper-card" id="s5-card-3">
+              <h2>UPPER</h2>
+              <h3>card</h3>
+            </div>
+            <div class="s5-lower-card" id="s5-card-4">
+              <h2>LOWER</h2>
+              <h3>card</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="section-6">
+      <div class="section-header">
+        <h1>Section 6</h1>
+        <p>After pressing the button, the rectangle expands and the hidden text appears. 
+          This feature is not available on a small screen.</p>
+        <button onclick="showHideContent(5)">Hide content</button>
+      </div>
+      <div id="s6-body">
+        <div id="s6-container">
+          <div class="s-6-main s6-fragment-size" id="s-6-main">
+            <div class="s-6-1 s6-fragment-size" id="s-6-1">
+              <div class="s-6-2 s6-fragment-size" id="s-6-2">
+                <div class="s-6-3 s6-fragment-size" id="s-6-3">
+                  <div class="s-6-4 s6-fragment-size" id="s-6-4">
+                    <div class="s-6-5 s6-fragment-size" id="s-6-5">
+                      <div class="s-6-6 s6-fragment-size" id="s-6-6">
+                        <div class="s-6-7 s6-fragment-size" id="s-6-7">
+                          <div class="s-6-8 s6-fragment-size" id="s-6-8">
+                            <div id="s6-hidden-content" class="s6-hidden-content-invisible">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              <input type="button" value="Roll Up" id="s6-roll-up-button" onclick="rollUpAll()">
+                            </div>
+                            <p id="s6-disabled-text">The screen is to small. Sorry, i'm</p>
+                            <input type="button" value="disabled" id="s6-disabled-button">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input type="button" value="Click Me" id="s6-unfold-button" onclick="unfoldAll()">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="scroll-indicator">
+    <div id="indicator-border">
+      <div id="indicator-body"></div>
+    </div>
+    <div id="section-pointers">
+      <div class="section-pointer">
+        <span class="section-name"><a href="#section-1">Section  1</a></span>
+      </div>
+      <div class="section-pointer">
+        <span class="section-name"><a href="#section-2">Section  2</a></span>
+      </div>
+      <div class="section-pointer">
+        <span class="section-name"><a href="#section-3">Section  3</a></span>
+      </div>
+      <div class="section-pointer">
+        <span class="section-name"><a href="#section-4">Section  4</a></span>
+      </div>
+      <div class="section-pointer">
+        <span class="section-name"><a href="#section-5">Section  5</a></span>
+      </div>
+      <div class="section-pointer">
+        <span class="section-name"><a href="#section-6">Section  6</a></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script/scroll.js"></script>
+  <script src="./script/show-hide-section-body.js"></script>
+  <script src="./script/section-1.js"></script>
+  <script src="./script/section-2.js"></script>
+  <script src="./script/section-3.js"></script>
+  <script src="./script/section-4.js"></script>
+  <script src="./script/section-5.js"></script>
+  <script src="./script/section-6.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+@media screen and (max-width: 767px) {
+    #s6-container {
+        height: 600px;
+        width: 200px;
+    }
+
+    .s-6-main {
+        left: 0;
+        top: 200px;
+    }
+
+    .s6-fragment-size {
+        height: 200px;
+        width: 200px;
+    }
+
+    #s6-unfold-button { display: none; }
+
+    #s6-disabled-button { pointer-events: none; }
+
+    #s6-disabled-text { padding-top: 60px; }
+}
+
+@media screen and (min-width: 768px) {
+    #s6-container {
+        height: 600px;
+        width: 600px;
+    }
+
+    .s-6-main {
+        left: 200px;
+        top: 200px;
+    }
+
+    .s6-fragment-size {
+        height: 200px;
+        width: 200px;
+    }
+
+    #s6-disabled-button, #s6-disabled-text { display: none; }
+
+    #s6-unfold-button {
+        margin-top: 90px;
+        position: relative;
+        z-index: 500;
+    }
+    #s6-unfold-button:hover { cursor: pointer; }
+}
+
+#section-6 .section-header {
+    background-image: -webkit-linear-gradient(#333 50%, rgba(100, 75, 140, .15) 100%);
+    background-image: -moz-linear-gradient(#333 50%, rgba(100, 75, 140, .15) 100%);
+    background-image: -o-linear-gradient(#333 50%, rgba(100, 75, 140, .15) 100%);
+    background-image: linear-gradient(#333 50%, rgba(100, 75, 140, .15) 100%);
+}
+
+#s6-body {
+    background-color: rgb(100, 75, 140);
+    padding: 1px 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#s6-container { margin: 40px auto; }
+
+.s-6-main {
+    background-color: #eee;
+    position: relative;
+}
+
+/* 1 fragment start */
+.s-6-1 {
+    background-color: #eee;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+    transform-origin: left;
+    transform: perspective(400px);
+}
+
+.s-6-1-turn {
+    transform: rotateY(180deg) perspective(400px);
+    transform-origin: left;
+}
+/* 1 fragment end */
+/* 2 fragment start */
+.s-6-2 {
+    background-color: #eee;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+    transform-origin: top;
+    transform: perspective(400px);
+}
+
+.s-6-2-turn {
+    transform: rotateX(180deg) perspective(400px);
+    transform-origin: top;
+}
+/* 2 fragment end */
+/* 3 fragment start */
+.s-6-3 {
+    background-color: #eee;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+    transform-origin: left;
+}
+
+.s-6-3-turn {
+    transform: rotateY(180deg);
+    transform-origin: left;
+}
+/* 3 fragment end */
+/* 4 fragment start */
+.s-6-4 {
+    background-color: #eee;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+    transform-origin: right;
+}
+
+.s-6-4-turn {
+    transform: rotateY(180deg);
+    transform-origin: right;
+}
+/* 4 fragment end */
+/* 5 fragment start */
+.s-6-5 {
+    background-color: #eee;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+    transform-origin: top;
+}
+
+.s-6-5-turn {
+    transform: rotateX(180deg);
+    transform-origin: top;
+}
+/* 5 fragment end */
+/* 6 fragment start */
+.s-6-6 {
+    background-color: #eee;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+    transform-origin: bottom;
+}
+
+.s-6-6-turn {
+    transform: rotateX(180deg);
+    transform-origin: bottom;
+}
+/* 6 fragment end */
+/* 7 fragment start */
+.s-6-7 {
+    background-color: #eee;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+    transform-origin: right;
+}
+
+.s-6-7-turn {
+    transform: rotateY(180deg);
+    transform-origin: right;
+}
+/* 7 fragment end */
+/* 8 fragment start */
+.s-6-8 {
+    background-color: #eee;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+    transform-origin: left;
+}
+
+.s-6-8-turn {
+    transform: rotateY(180deg);
+    transform-origin: left;
+}
+/* 8 fragment end */
+
+.s6-hidden-content-invisible {
+    display: none;
+    position: absolute;
+    transform: rotate(180deg);
+    left: -400px;
+    top: 0px;
+    height: 600px;
+    width: 600px;
+}
+
+.s6-hidden-content-visible {
+    background-color: #fff;
+    transform: rotate(180deg);
+    transition: all 1s ease;
+    opacity: 0;
+    visibility: initial;
+    position: absolute;
+    left: -400px;
+    top: 0px;
+    height: 600px;
+    width: 600px;
+}
+
+.s6-hidden-content-visible-transition { opacity: 1; }
+
+#s6-hidden-content p { margin: 180px 50px 50px 50px; }

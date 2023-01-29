@@ -1,0 +1,106 @@
+@media screen and (max-width: 991px) {
+    #s4-container {
+        align-items: center;
+        flex-direction: column;
+    }
+    .s-4-1 {
+        align-self: center;
+        height: fit-content;
+        width: 300px;
+    }
+
+    .s-4-2 {
+        margin-top: 10px;
+        max-width: 600px;
+        min-width: 200px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #s4-container {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .s-4-1 {
+        height: fit-content;
+        width: 48%;
+    }
+
+    .s-4-2 {
+        width: 48%;
+    }
+}
+
+#section-4 .section-header {
+    background-image: -webkit-linear-gradient(#333 50%, rgba(60, 95, 95, .15) 100%);
+    background-image: -moz-linear-gradient(#333 50%, rgba(60, 95, 95, .15) 100%);
+    background-image: -o-linear-gradient(#333 50%, rgba(60, 95, 95, .15) 100%);
+    background-image: linear-gradient(#333 50%, rgba(60, 95, 95, .15) 100%);
+}
+
+#s4-body {
+    background-color: rgb(60, 95, 95);
+    padding: 1px 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#s4-container {
+    display: flex;
+    margin: 40px auto;
+    height: 600px;
+    width: 80%;
+}
+
+.s-4-1 p {
+    color: #ccc;
+    font-style: italic;
+    margin: 0;
+    text-align: right;
+}
+
+.s-4-img-wrapper {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+}
+
+.s-4-img {
+    width: 100%;
+}
+
+.s-4-img-area-active {
+    border: 2px solid rgb(230, 175, 30);
+    position: absolute;
+    z-index: 5;
+}
+
+.s-4-img-wrapper:hover .s-4-img-area {
+    border: 2px solid rgb(230, 175, 30);
+    position: absolute;
+    z-index: 5;
+}
+
+.s-4-img-area:hover {
+    box-shadow: 0 0 10px 2px rgb(230, 175, 30);
+    cursor: pointer;
+}
+
+.s-4-2 {
+    background-color: rgb(60, 95, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.s-4-2 img {
+    object-fit: cover;
+    position: relative;
+    transform: translate(0%, -0%) scale(5);
+    transition: transform ease-out;
+    transition-duration: 1.5s;
+}
